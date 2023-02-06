@@ -40,6 +40,9 @@
             "./migrations/.gitignore"
         ]
     },
+    "knplabs/knp-time-bundle": {
+        "version": "v1.19.0"
+    },
     "liip/imagine-bundle": {
         "version": "2.7",
         "recipe": {
@@ -183,6 +186,19 @@
             "./config/packages/security.yaml"
         ]
     },
+    "symfony/translation": {
+        "version": "5.2",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "main",
+            "version": "3.3",
+            "ref": "2ad9d2545bce8ca1a863e50e92141f0b9d87ffcd"
+        },
+        "files": [
+            "config/packages/translation.yaml",
+            "translations/.gitignore"
+        ]
+    },
     "symfony/twig-bundle": {
         "version": "5.2",
         "recipe": {
@@ -241,6 +257,18 @@
             "./config/packages/webpack_encore.yaml",
             "./package.json",
             "./webpack.config.js"
+        ]
+    },
+    "symfonycasts/reset-password-bundle": {
+        "version": "1.14",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "main",
+            "version": "1.0",
+            "ref": "97c1627c0384534997ae1047b93be517ca16de43"
+        },
+        "files": [
+            "config/packages/reset_password.yaml"
         ]
     },
     "symfonycasts/verify-email-bundle": {

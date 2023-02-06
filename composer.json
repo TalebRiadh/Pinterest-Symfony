@@ -11,6 +11,7 @@
         "doctrine/doctrine-bundle": "^2.7",
         "doctrine/doctrine-migrations-bundle": "^2.2",
         "doctrine/orm": "^2.14",
+        "knplabs/knp-time-bundle": "^1.19",
         "liip/imagine-bundle": "^2.7",
         "sensio/framework-extra-bundle": "^6.2",
         "symfony/asset": "5.2.*",
@@ -28,6 +29,7 @@
         "symfony/validator": "5.2.*",
         "symfony/webpack-encore-bundle": "^1.16",
         "symfony/yaml": "5.2.*",
+        "symfonycasts/reset-password-bundle": "^1.14",
         "symfonycasts/verify-email-bundle": "^1.11",
         "vich/uploader-bundle": "^1.21"
     },
