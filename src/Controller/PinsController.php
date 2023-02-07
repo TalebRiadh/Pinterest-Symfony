@@ -13,14 +13,16 @@ use Symfony\Component\Routing\Annotation\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Contracts\HttpClient\HttpClientInterface;
 
 class PinsController extends AbstractController
 {
 
 
     #[Route('/', name: 'app_home', methods: ["GET"])]
-    public function index(PinRepository $pinRepository): Response
+    public function index(PinRepository $pinRepository, HttpClientInterface $httpClient): Response
     {
+        
         $pins = $pinRepository->findBy([], ['createdAt' => 'DESC']);
 
         return $this->render('pins/index.html.twig', compact('pins'));
